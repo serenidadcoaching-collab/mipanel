@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mi Panel · Emprendimiento · TFM · Finanzas</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="top">
+    <h1>Mi Panel</h1>
+    <div id="auth" class="auth"></div>
+  </header>
+
+  <nav class="tabs" id="tabs">
+    <button data-tab="resumen" class="active">Resumen</button>
+    <button data-tab="emprendimiento">Emprendimiento</button>
+    <button data-tab="tfm">TFM</button>
+    <button data-tab="finanzas">Finanzas</button>
+  </nav>
+
+  <main id="view"></main>
+
+  <p class="mode" id="mode"></p>
+
+  <!-- Supabase (solo se usa si config.js tiene URL y clave) -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
